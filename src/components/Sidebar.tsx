@@ -10,7 +10,6 @@ const Wrapper = styled.div`
   height: 100vh;
   width: 220px;
   padding: 26px 16px;
-  position: fixed;
 
   svg {
     margin-bottom: 26px;
