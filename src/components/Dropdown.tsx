@@ -4,7 +4,7 @@ import { Colors } from "../common/styles";
 
 const StyledSelect = styled.div<DropdownProps>`
   display: flex;
-  align-items: center;
+  align-items: ${(props) => (props.opened ? "baseline" : "center")};
   background: ${(props) => (props.opened ? Colors.lightGray : Colors.white2)};
   border: none;
   border-radius: 50px;
@@ -20,6 +20,7 @@ const StyledSelect = styled.div<DropdownProps>`
 
   &:after {
     display: flex;
+    align-self: baseline;
     content: "";
     margin-left: 15px;
     width: 5px;
