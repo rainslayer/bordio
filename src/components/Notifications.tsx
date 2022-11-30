@@ -2,6 +2,7 @@ import { useState } from "react";
 import styled from "styled-components";
 import { ReactComponent as BellSvg } from "../common/images/svg/bell.svg";
 import { Colors } from "../common/styles";
+import { formatNumericOutput } from "../utils/formatNumericOutput";
 
 const Wrapper = styled.div`
   position: relative;
@@ -27,7 +28,7 @@ export function Notifications() {
   return (
     <Wrapper>
       <BellSvg />
-      <span>{notificationsCount > 99 ? "99+" : notificationsCount}</span>
+      <span>{formatNumericOutput(notificationsCount)}</span>
     </Wrapper>
   );
 }

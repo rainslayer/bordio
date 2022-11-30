@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { Board } from "./components/Board";
 import { Header } from "./components/Header";
 import { Sidebar } from "./components/Sidebar";
 import { Tools } from "./components/Tools";
@@ -25,6 +26,7 @@ function App() {
       </RowWrapper>
       <ColumnWrapper>
         <Header />
+        <Board />
       </ColumnWrapper>
     </>
   );
