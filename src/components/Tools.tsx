@@ -7,7 +7,6 @@ import { ReactComponent as NotesSvg } from "../common/images/svg/notes.svg";
 import { ReactComponent as FilesSvg } from "../common/images/svg/files.svg";
 
 const Wrapper = styled.div`
-  background: ${Colors.white2};
   height: 100vh;
   width: 154px;
   padding-right: 16px;
