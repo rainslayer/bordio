@@ -83,7 +83,9 @@ export function Card(props: IComponentProps) {
       <CardDescription completed={isCompleted}>
         {card.description}
       </CardDescription>
-      <CardEstimate color={card.estimateColor}>{card.estimate}</CardEstimate>
+      <CardEstimate color={isCompleted ? Colors.black : card.estimateColor}>
+        {card.estimate}
+      </CardEstimate>
     </StyledCard>
   );
 }
